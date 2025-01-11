@@ -1,0 +1,25 @@
+Steps to install AWS CLI
+
+1. curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg”
+2. sudo installer -pkg ./AWSCLIV2.pkg -target /
+3. which aws
+4. aws --version
+
+Install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Install terraform
+1. brew tap hashicorp/tap
+2. brew install hashicorp/tap/terraform
+3. brew update
+4. brew upgrade hashicorp/tap/terraform
+5. terraform -help
+
+AWS Authentication
+There are many ways to do aws authentication from terraform. We need this so that we can deploy resources on given aws account.
+We are going to use shared credential file option to authenticate in aws
+https://registry.terraform.io/providers/hashicorp/aws/latest
+
+
+
+
